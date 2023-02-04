@@ -4,28 +4,36 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
 using System.IO;
+using Yarn.Unity;
 public class Settings : MonoBehaviour
 {
     public AudioMixer main;
     public Slider musicVolume;
     public Slider ambienceVolume;
     public Slider gameVolume;
+    public Slider textSpeed;
     public GameObject pauseMenu;
+    private GameObject container;
+    public GameObject dialog;
+    public GameObject blocker;
     private bool paused = false;
     private bool disabled = false;
     public bool saved = true;
+    private LineView lView;
    
     // Start is called before the first frame update
     void Start()
     {
-        if (File.Exists($"{Application.streamingAssetsPath}/preferences.json"))
-        {
-            LoadSettings(false);
-        }
-        else
-        {
-            LoadSettings(true);
-        }
+        //if (File.Exists($"{Application.streamingAssetsPath}/preferences.json"))
+        //{
+        //    LoadSettings(false);
+        //}
+        //else
+        //{
+        //    LoadSettings(true);
+        //}
+        lView = GameObject.Find("LineView").GetComponent<LineView>();
+        container = GameObject.Find("SettingsContainer");
     }
     private void Update()
     {
@@ -36,6 +44,10 @@ public class Settings : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Escape) && disabled == false && paused == true)
         {
             Pause(1);
+        }
+        else if(Input.GetKeyDown(KeyCode.Escape) && disabled == true && paused == true)
+        {
+            Disable();
         }
     }
   
@@ -69,16 +81,33 @@ public class Settings : MonoBehaviour
         saved = false;
 
     }
+
+    public void SetTextSpeed(float value)
+    {
+        lView.typewriterEffectSpeed = value;
+        saved = false;
+    }
     
     public void QuitGame()
     {
         Application.Quit();
     }
-    
-   
+    public void Disable()
+    {
+        if (saved == false)
+        {
+            dialog.SetActive(true);
+            blocker.SetActive(true);
+        }
+        else if (saved == true)
+        {
+            container.SetActive(false);
+        }
+    }
+
     public void SaveSettings()
     {
-        Preferences prefs = new Preferences(musicVolume.value, ambienceVolume.value, gameVolume.value);
+        Preferences prefs = new Preferences(musicVolume.value, ambienceVolume.value, gameVolume.value, textSpeed.value);
         string filepath = $"{Application.streamingAssetsPath}/preferences.json";
         string json = JsonUtility.ToJson(prefs);
         File.WriteAllText(filepath, json);
@@ -96,6 +125,7 @@ public class Settings : MonoBehaviour
         musicVolume.value = prefs.music;
         ambienceVolume.value = prefs.ambience;
         gameVolume.value = prefs.game;
+        textSpeed.value = prefs.textSpeed;
         saved = true;
         SetVolumeMusic(musicVolume.value);
         SetVolumeAmbience(ambienceVolume.value);
@@ -112,11 +142,6 @@ public class Settings : MonoBehaviour
     {
         disabled = !disabled;
     }
-    public void Unpause()
-    {
-        paused = false;
-        Time.timeScale = 1;
-    }
 
 }
 [System.Serializable]
@@ -125,11 +150,13 @@ public class Preferences
     public float music;
     public float ambience;
     public float game;
-    public Preferences(float music, float ambience, float game)
+    public float textSpeed;
+    public Preferences(float music, float ambience, float game, float textSpeed)
     {
         this.music = music;
         this.ambience = ambience;
         this.game = game;
+        this.textSpeed = textSpeed;
     }
-    
+
 }
