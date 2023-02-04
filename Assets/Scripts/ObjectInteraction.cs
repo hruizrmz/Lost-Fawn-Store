@@ -10,12 +10,9 @@ public class ObjectInteraction : MonoBehaviour
     public Text dialogText;
     public string dialog;
     public bool playerInRange;
+    public int itemValue;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private PlayerInventory inventory;
 
     // Update is called once per frame
     void Update()
@@ -26,6 +23,12 @@ public class ObjectInteraction : MonoBehaviour
             {
                 dialogBox.SetActive(false);
                 Time.timeScale = 1f;
+
+                if (inventory.item == 0) {
+                inventory.item = itemValue;
+                print("Player inventory picked up item #" + inventory.Item);
+                Destroy(gameObject);
+            }
             } else {
                 dialogBox.SetActive(true);
                 dialogText.text = dialog;
@@ -39,6 +42,7 @@ public class ObjectInteraction : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             playerInRange = true;
+            inventory = other.GetComponent<PlayerInventory>();
         }
     }
 

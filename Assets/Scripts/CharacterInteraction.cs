@@ -8,14 +8,11 @@ public class CharacterInteraction : MonoBehaviour
 {
     public GameObject dialogBox;
     public Text dialogText;
-    public string dialog;
+    public string dialogEmpty, dialogWrong, dialogRight;
+    public int rightItemID;
     public bool playerInRange;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private PlayerInventory inventory;
 
     // Update is called once per frame
     void Update()
@@ -26,18 +23,28 @@ public class CharacterInteraction : MonoBehaviour
             {
                 dialogBox.SetActive(false);
                 Time.timeScale = 1f;
-    
-                
             } else {
                 dialogBox.SetActive(true);
-                dialogText.text = dialog;
                 Time.timeScale = 0f;
+                if (inventory.item == 0) // has no items
+                {
+                    dialogText.text = dialogEmpty;
+                    
+                } else { // has an item
+                    if (inventory.item == rightItemID) {
+                        dialogText.text = dialogRight;
+                    } else {
+                        dialogText.text = dialogWrong;
+                    }
+                }
+                inventory.item = 0;
             }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        inventory = other.GetComponent<PlayerInventory>();
         if(other.CompareTag("Player"))
         {
             playerInRange = true;
