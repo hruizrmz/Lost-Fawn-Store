@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1414153177776673088}
   - component: {fileID: 1414153177776673089}
-  - component: {fileID: 1414153177776673090}
+  - component: {fileID: 1862668745}
   m_Layer: 0
   m_Name: Transition
   m_TagString: Untagged
@@ -59,7 +59,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 0.4}
   m_EdgeRadius: 0
---- !u!114 &1414153177776673090
+--- !u!114 &1862668745
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -68,12 +68,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1414153177776673095}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56e3d27470ed77f449a929d088e57929, type: 3}
+  m_Script: {fileID: 11500000, guid: e0d99da33e442a6448002d3695644d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: 
+  sceneToLoad: HelenaRoom1
   playerPos: {x: 0, y: 0}
-  oldPlayerPos: {fileID: 11400000, guid: abeafb2c9d4b22e438d2ad18a2f857f7, type: 2}
-  fadeInPanel: {fileID: 3403981771602726679, guid: 40dbc1a5a4e7fba428abf8b34220ae65, type: 3}
-  fadeOutPanel: {fileID: 275450155468480589, guid: b3d3db5ccfd9fdd4f9985af2e495cedc, type: 3}
+  oldPlayerPos: {fileID: 11400000, guid: cebd4d325643b3044830ecf976a94c7f, type: 2}
+  fadeInPanel: {fileID: 5443125689564223053, guid: 4017179ef73d2c94ab3d8f4df41f0d67, type: 3}
+  fadeOutPanel: {fileID: 8815053169770075741, guid: 851658fdc4fdcf8499eaa9b5fdf1785f, type: 3}
   fadeTime: 0.6
