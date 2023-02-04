@@ -44,6 +44,7 @@ namespace Yarn.Unity
     [AddComponentMenu("Scripts/Yarn Spinner/Dialogue Runner"), HelpURL("https://yarnspinner.dev/docs/unity/components/dialogue-runner/")]
     public class DialogueRunner : MonoBehaviour
     {
+        public CanvasGroup canvasGroup;
         /// <summary>
         /// Represents the result of attempting to locate and call a command.
         /// </summary>
@@ -72,6 +73,7 @@ namespace Yarn.Unity
         /// </summary>
         [UnityEngine.Serialization.FormerlySerializedAs("yarnProgram")]
         public YarnProject yarnProject;
+        
 
         /// <summary>
         /// The variable storage object.
@@ -305,6 +307,7 @@ namespace Yarn.Unity
         /// from.</param>
         public void StartDialogue(string startNode)
         {
+            canvasGroup.alpha = 1;
             // If the dialogue is currently executing instructions, then
             // calling ContinueDialogue() at the end of this method will
             // cause confusing results. Report an error and stop here.
@@ -702,6 +705,8 @@ namespace Yarn.Unity
 
         void Awake()
         {
+            canvasGroup = GameObject.Find("DialogueBox").GetComponent<CanvasGroup>();
+            canvasGroup.alpha = 0;
             
             if (dialogueViews.Length == 0)
             {
@@ -797,7 +802,7 @@ namespace Yarn.Unity
                 {
                     Debug.LogError(message);
                 },
-
+                
                 LineHandler = HandleLine,
                 CommandHandler = HandleCommand,
                 OptionsHandler = HandleOptions,
@@ -872,6 +877,7 @@ namespace Yarn.Unity
         void HandleDialogueComplete()
         {
             IsDialogueRunning = false;
+            canvasGroup.alpha = 0;
             foreach (var dialogueView in dialogueViews)
             {
                 if (dialogueView == null || dialogueView.isActiveAndEnabled == false) continue;

@@ -85,10 +85,10 @@ namespace Yarn.Unity
         /// to 1.</param>
         /// <param name="stopToken">A <see cref="CoroutineInterruptToken"/> that
         /// can be used to interrupt the coroutine.</param>
+       
         public static IEnumerator FadeAlpha(CanvasGroup canvasGroup, float from, float to, float fadeTime, CoroutineInterruptToken stopToken = null)
         {
             stopToken?.Start();
-
             canvasGroup.alpha = from;
 
             var timeElapsed = 0f;
@@ -149,7 +149,7 @@ namespace Yarn.Unity
 
             // Start with everything invisible
             text.maxVisibleCharacters = 0;
-
+            
             // Wait a single frame to let the text component process its
             // content, otherwise text.textInfo.characterCount won't be
             // accurate
@@ -658,7 +658,12 @@ namespace Yarn.Unity
             }
             // No animation is now running. Signal that we want to
             // interrupt the line instead.
-            requestInterrupt?.Invoke();
+            else
+            {
+                requestInterrupt?.Invoke();
+            }
+
+
         }
 
         /// <summary>
