@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -5053,12 +5053,12 @@ TextureImporter:
       Furniture_Yellow_40: -526790020
       Furniture_Yellow_60: -10768541
       Furniture_Yellow_217: -1717169219
-      Furniture_Yellow_52: 1276224738
+      Furniture_Yellow_144: 724229968
       Furniture_Yellow_118: -1643717419
       Furniture_Yellow_42: -697624342
+      Furniture_Yellow_52: 1276224738
       Furniture_Yellow_141: 1674697008
       Furniture_Yellow_164: 1731609944
-      Furniture_Yellow_144: 724229968
       Furniture_Yellow_216: 1176796857
       Furniture_Yellow_171: 1911276071
       Furniture_Yellow_117: -1247973468

@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -3596,7 +3596,6 @@ TextureImporter:
       Floors_Walls_11: 1206222590
       Floors_Walls_88: 820720656
       Floors_Walls_115: -1598197985
-      Floors_Walls_136: -390617789
       Floors_Walls_157: -1611008249
       Floors_Walls_120: -1770007338
       Floors_Walls_160: -476871194
@@ -3683,20 +3682,21 @@ TextureImporter:
       Floors_Walls_125: 369745257
       Floors_Walls_122: 1418653880
       Floors_Walls_96: 479096824
+      Floors_Walls_136: -390617789
       Floors_Walls_5: -593130529
-      Floors_Walls_55: 1924615637
       Floors_Walls_100: -523887580
-      Floors_Walls_116: 950446091
+      Floors_Walls_55: 1924615637
       Floors_Walls_117: 986110568
+      Floors_Walls_116: 950446091
       Floors_Walls_83: -77882853
-      Floors_Walls_141: 436310709
       Floors_Walls_93: -825426270
       Floors_Walls_32: -917990059
       Floors_Walls_10: 1291791033
       Floors_Walls_94: -1059748059
-      Floors_Walls_140: 172479970
+      Floors_Walls_141: 436310709
       Floors_Walls_124: 1003533122
       Floors_Walls_50: 620631804
+      Floors_Walls_140: 172479970
       Floors_Walls_142: 2001913333
       Floors_Walls_37: -1023450471
       Floors_Walls_44: 304331734
