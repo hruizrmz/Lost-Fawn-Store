@@ -25,6 +25,7 @@ public class CharacterInteraction : MonoBehaviour
             if(dialogBox.activeInHierarchy)
             {
                 dialogBox.SetActive(false);
+    
                 
             } else {
                 dialogBox.SetActive(true);

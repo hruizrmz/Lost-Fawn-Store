@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private Rigidbody2D rg;
+    public Rigidbody2D rg;
     
     // Variables that help pass input into FixedUpdate
     private bool up = false;
