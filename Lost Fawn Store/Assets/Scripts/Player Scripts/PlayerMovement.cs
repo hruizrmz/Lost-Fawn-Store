@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
 
     private readonly float speed = 50f;
 
+    public VectorValue startingPos;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +26,9 @@ public class PlayerMovement : MonoBehaviour
         rg = GetComponent<Rigidbody2D>();
         rg.drag = 10f;
         rg.gravityScale = 0; // Prevents object from falling to what Unity thinks is the bottom
+        rg.constraints = RigidbodyConstraints2D.FreezeRotation; // Prevents rotating when colliding with other rb's
+
+        transform.position = startingPos.initialValue;
     }
 
     // Update is called once per frame

@@ -10,11 +10,6 @@ public class CameraControl : MonoBehaviour
     public Vector2 minPos; // lower left
     public Vector2 maxPos; // upper right
 
-    void Start()
-    {
-        
-    }
-
     void LateUpdate()
     {
         if (transform.position != target.position)
