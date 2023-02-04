@@ -44,6 +44,9 @@ TagManager:
   - name: Background
     uniqueID: 2037138071
     locked: 0
-  - name: Player
+  - name: Signs
     uniqueID: 2830820553
+    locked: 0
+  - name: Player
+    uniqueID: 3710784857
     locked: 0
