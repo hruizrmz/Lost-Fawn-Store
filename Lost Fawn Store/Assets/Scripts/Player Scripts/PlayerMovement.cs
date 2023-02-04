@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     private bool down = false;
     private bool right = false;
     private bool left = false;
+    private Vector3 change;
+    private Animator animator;
 
     private readonly float speed = 50f;
 
@@ -19,6 +21,8 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
+
         if(GetComponent<Rigidbody2D>() == null)  // Checks if the object has a Rigidbody, adds one if not
         {
             gameObject.AddComponent<Rigidbody2D>();
@@ -34,6 +38,9 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        change = Vector3.zero;
+        change.x = Input.GetAxisRaw("Horizontal");
+        change.y = Input.GetAxisRaw("Vertical");
         // Processes input and flips the bool to true only when not already at the speed limit
         if (Input.GetKey(KeyCode.W) == true && rg.velocity.y < speed)
         {
@@ -50,6 +57,15 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.A) == true && rg.velocity.x > -speed)
         {
             left = true;
+        }
+        if (change != Vector3.zero)
+        {
+            animator.SetFloat("moveX", change.x);
+            animator.SetFloat("moveY", change.y);
+            animator.SetBool("moving", true);
+        } else
+        {
+            animator.SetBool("moving", false);
         }
     }
 
