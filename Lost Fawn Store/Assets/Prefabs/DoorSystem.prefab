@@ -241,6 +241,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1414153177776673089, guid: 8892d24bd7d65824bb6017b16a8f431e, type: 3}
+      propertyPath: m_Size.x
+      value: 1.1001828
+      objectReference: {fileID: 0}
+    - target: {fileID: 1414153177776673089, guid: 8892d24bd7d65824bb6017b16a8f431e, type: 3}
+      propertyPath: m_Size.y
+      value: 1.0142225
+      objectReference: {fileID: 0}
+    - target: {fileID: 1414153177776673089, guid: 8892d24bd7d65824bb6017b16a8f431e, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.031966537
+      objectReference: {fileID: 0}
+    - target: {fileID: 1414153177776673089, guid: 8892d24bd7d65824bb6017b16a8f431e, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.23131502
+      objectReference: {fileID: 0}
     - target: {fileID: 1414153177776673095, guid: 8892d24bd7d65824bb6017b16a8f431e, type: 3}
       propertyPath: m_Name
       value: Transition
