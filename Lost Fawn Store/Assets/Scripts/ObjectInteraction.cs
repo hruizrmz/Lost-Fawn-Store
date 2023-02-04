@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class Sign : MonoBehaviour
+public class ObjectInteraction : MonoBehaviour
 {
     public GameObject dialogBox;
     public Text dialogText;
