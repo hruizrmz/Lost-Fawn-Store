@@ -6,6 +6,8 @@ public class DoorSwitch : MonoBehaviour
 {
     public DoorController door;
 
+    public AudioSource doorSound;
+
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && !other.isTrigger && ItemController.Instance.itemHeld == 0)
@@ -21,5 +23,6 @@ public class DoorSwitch : MonoBehaviour
     {
         door.transitionPoint.SetActive(true);
         door.GetComponent<SpriteRenderer>().sprite = door.openSprite;
+        doorSound.enabled = true;
     }
 }

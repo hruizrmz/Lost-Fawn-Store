@@ -9,6 +9,7 @@ public class ObjectInteraction : MonoBehaviour
     public bool playerInRange;
     public int itemValue;
     public DoorController door;
+    public AudioSource interactionSound;
 
     public string objectName; // The exact name of this specific object. Case-sensitive
     private bool hasBeenGiven = false;
@@ -48,10 +49,12 @@ public class ObjectInteraction : MonoBehaviour
                 dialogBox.StartDialogue(objectName);
                 ItemController.Instance.itemHeld = itemValue;
                 ItemController.Instance.itemsGiven.Add(objectName);
-                Destroy(gameObject);
+                interactionSound.enabled = true;
+                Destroy(gameObject, 0.025f);
                 door.transitionPoint.SetActive(true);
                 door.GetComponent<SpriteRenderer>().sprite = door.openSprite;
-            }
+                
+            } 
         }
     }
     
