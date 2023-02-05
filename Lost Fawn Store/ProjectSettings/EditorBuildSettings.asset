@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ballroom.unity
     guid: 44da6a1c6a5eb124793db96f2f7e6e1f
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: ceb46e64dada28d41bb18e5623655472
   m_configObjects: {}
