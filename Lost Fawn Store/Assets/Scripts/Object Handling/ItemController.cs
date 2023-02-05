@@ -35,8 +35,11 @@ public class ItemController : MonoBehaviour
     public void ResetCharacter(GameObject character)
     {
         character.SetActive(false);
-        if (this.currentCharacter < (maxCharacters-1)) this.currentCharacter++;
-        this.characterEntered = false;
-        character.SetActive(true);
+        if (this.currentCharacter < (maxCharacters - 1))
+        {
+            this.currentCharacter++;
+            this.characterEntered = false;
+            character.SetActive(true);
+        }
     }
 }

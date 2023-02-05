@@ -162,11 +162,13 @@ MonoBehaviour:
   characterNames:
   - Michelle
   - Kirsi
+  - Erik
   characterSprites:
   - {fileID: 21300000, guid: 4ae2f686d0d865d468cb2d0e1fc540fe, type: 3}
   - {fileID: 21300000, guid: 8c2367151af3b7c4793f75a91e597820, type: 3}
+  - {fileID: 21300000, guid: bda0c0a5bcd529e4796dd842c9e84e4f, type: 3}
   currentCharacter: 0
-  maxCharacters: 2
+  maxCharacters: 3
 --- !u!4 &31670373
 Transform:
   m_ObjectHideFlags: 0
