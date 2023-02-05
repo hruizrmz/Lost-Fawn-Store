@@ -9,7 +9,7 @@ public class SceneTransition : MonoBehaviour
 {
     public string sceneToLoad;
 
-    public Vector2 playerPos;
+    private Vector2 playerPos;
     public VectorValue oldPlayerPos;
 
     public GameObject fadeInPanel;
@@ -42,7 +42,6 @@ public class SceneTransition : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && playerInRange)
         {
-            oldPlayerPos.initialValue = playerPos;
             /*StartCoroutine(FadeCo(true));*/ // replaces the normal LoadScene function
             dRun.StartDialogue("RoomChoice");
         }
@@ -51,6 +50,25 @@ public class SceneTransition : MonoBehaviour
     [YarnCommand("sceneswap")]
     public void SceneChoice(string sceneName)
     {
+        switch (sceneName)
+        {
+            case "FrontDesk":
+                playerPos = new Vector2(0.8f, 2.5f);
+                break;
+            case "FoodRoom":
+                playerPos = new Vector2(-7.0f, 2.8f);
+                break;
+            case "LostMedia":
+                playerPos = new Vector2(0.8f, 2.3f);
+                break;
+            case "Ballroom":
+                playerPos = new Vector2(4.5f, 1.0f);
+                break;
+            default:
+                playerPos = new Vector2(0.0f, 0.0f);
+                break;
+        }
+        oldPlayerPos.initialValue = playerPos;
         StartCoroutine(FadeCo(false, sceneName));
     }
 
