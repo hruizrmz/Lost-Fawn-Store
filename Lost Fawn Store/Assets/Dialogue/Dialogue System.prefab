@@ -917,7 +917,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Last line
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f23de99e0d80ea440a21301ac0e0d9b5, type: 2}
   m_sharedMaterial: {fileID: -8658030883229882321, guid: f23de99e0d80ea440a21301ac0e0d9b5, type: 2}
@@ -1260,7 +1260,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 8833555483323747969}
   optionViewPrefab: {fileID: 5665317717604146022, guid: 3ff4e0d87ab7d4789a1565ac303e8261, type: 3}
-  lastLineText: {fileID: 6279928040163131880}
+  lastLineText: {fileID: 0}
   fadeTime: 0
   showUnavailableOptions: 0
 --- !u!114 &8833555483323747968
