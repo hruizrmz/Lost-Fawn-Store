@@ -101,6 +101,7 @@ MonoBehaviour:
   openSprite: {fileID: 1222709095, guid: 2818c86e3e575294194b4b9c5201e349, type: 3}
   closedSprite: {fileID: -666855221, guid: 2818c86e3e575294194b4b9c5201e349, type: 3}
   transitionPoint: {fileID: 500335481753672650}
+  closeDoor: 1
 --- !u!1 &1536176806821613841
 GameObject:
   m_ObjectHideFlags: 0
