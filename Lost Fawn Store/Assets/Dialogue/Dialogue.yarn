@@ -8,18 +8,18 @@ Michelle: I don’t think I can remember it well. But I can try. It was somethin
 -> I'm amazed!
 
 Anyway, time to get writing!
-<<jump Storybook>>
+<<jump Tangerine>>
 ===
 title: Michelle1
 ---
-CClerk: Welcome to Lost Fawn Store. Are you browsing, or looking for something more… specific, perhaps?
+Clerk: Welcome to Lost Fawn Store. Are you browsing, or looking for something more… specific, perhaps?
 Michelle: Who… are you?
 Clerk: I am but a humble clerk. Could you tell me what brought you here?
 Michelle: I guess it was… something mundane, but also close.
 Clerk: Could you describe it to me in more detail, ma’am?
 Michelle: I don’t think I can remember it well. But I can try. It was something very simple, but it was the sweetest thing I had ever eaten. The taste is unlike any other. I hope it makes sense, does it?
 Clerk: That is indeed quite interesting. But of course, ma'am. Just wait here, please.
-Clerk: The sweetest thing ever, huh?
+Clerk: <i>The sweetest thing ever, huh? I could try the Nostalgic Flavors Mall.</i>
 
 
 ===
@@ -34,7 +34,7 @@ title: Michelle2
 ---
 Michelle: I never had a good relationship with my mother. Damn, I really don't think my mother had good relationships with her mother either. 
 Michelle: That kind of sucks, that in a way, it always felt like the way the world is, but also not the way it should be. But whenever my mother brought me peeled fruit, I felt like the world is the way it should be, for once.
-Michelle: When I come back home, she and I are no more than spiders in a cage, fighting over control. But we always end up coming back to each other.
+Michelle: When I come back home, she and I, are no more than spiders in a cage, fighting over control. But we always end up coming back to each other.
 Michelle: There is… a specific feeling, when you realize something that seemed insignificant to you is very significant to someone else.
 Michelle: I think… this is how I feel when we argue once again and she brings me sliced tangerine, over and over again. 
 Michelle: Like a fragmented puzzle made complete for a second.
@@ -44,12 +44,12 @@ Clerk: I do not believe we are finished yet, however. There is something else th
 Michelle: Yes. I am not done yet.
 Michelle: It was a story. First, a word, in the empty space, then an animal, running and jumping. My watercolor picture, coming alive.
 Clerk: I think I know who you are talking about.
-
+Clerk: Anything related to stories usually goes to the Lost Media Library.
 ===
 
 title: Michelle3
 ---
-Michelle: This is the first book I have ever drawn for.
+Michelle: This is the first book I have ever drawn for. It went out of print long since, and I lost my own copy.
 Michelle: I am a children’s book illustrator, you see.
 Michelle: I loved drawing as a child. My parents thought it was a waste of time, though.
 Michelle: Sometimes I was thinking that, as well. But they say the first thing always makes you proud - and it did.
@@ -64,18 +64,11 @@ Michelle: All you can and all you have to do is to commit to your decision and l
 Clerk: You are also ready to move on, are you not?
 Michelle: Yes. I am ready.
 
+
 ===
 
 title: Tangerine
 ---
 <color=\#b07972>A sweet fruit, peeled and prepared by someone who loved and cared very, very much. It induces an intoxicating citrus aroma. Must have been something meaningful for someone.</color>
-
-===
-
-title: Storybook
----
-<color=\#b07972>The book tells a classical East Asian folk tale - the tale of Moon Rabbit. Inside the book, you find beautiful traditional watercolor paintings printed onto the pages. You notice a small writing on the corner of one of the first pages.</color>
-<color=\#b07972>“From Hua, to mom and dad.”</color>
-<color=\#b07972>This copy is quite battered but was obviously treasured by someone - until it was lost.</color>
 
 ===
