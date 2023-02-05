@@ -8,7 +8,7 @@ public class DoorSwitch : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && !other.isTrigger)
+        if (other.CompareTag("Player") && !other.isTrigger && ItemController.Instance.itemHeld == 0)
         {
             // show door options dialogue
             // if player chose correct one, show right dialogue and openDoor()
