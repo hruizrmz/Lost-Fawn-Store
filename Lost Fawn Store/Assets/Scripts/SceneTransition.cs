@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Yarn.Unity;
 
+
 public class SceneTransition : MonoBehaviour
 {
     public string sceneToLoad;
@@ -17,6 +18,7 @@ public class SceneTransition : MonoBehaviour
     public float fadeTime;
 
     public List<string> scenes;
+    private bool playerInRange = false;
 
     private void Awake()
     {
@@ -36,9 +38,9 @@ public class SceneTransition : MonoBehaviour
         }
     }
 
-    public void OnTriggerEnter2D(Collider2D other)
+    private void Update()
     {
-        if (other.CompareTag("Player") && !other.isTrigger)
+        if (Input.GetKeyDown(KeyCode.Space) && playerInRange)
         {
             oldPlayerPos.initialValue = playerPos;
             /*StartCoroutine(FadeCo(true));*/ // replaces the normal LoadScene function
@@ -58,6 +60,22 @@ public class SceneTransition : MonoBehaviour
         SceneTransition st = GameObject.Find("Transition").GetComponent<SceneTransition>();
         List<string> sceneList = st.scenes;
         return sceneList[sceneNum];
+    }
+    
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInRange = true;
+        }
+    }
+
+    public void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInRange = false;
+        }
     }
 
     public IEnumerator FadeCo(bool defaultScene, string scene = "")
