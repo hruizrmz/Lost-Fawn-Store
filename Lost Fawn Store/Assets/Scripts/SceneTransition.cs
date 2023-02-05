@@ -31,7 +31,7 @@ public class SceneTransition : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && playerInRange)
         {
             oldPlayerPos.initialValue = playerPos;
-            StartCoroutine(FadeCo()); // replaces the normal LoadScene function
+            StartCoroutine(FadeCo(true)); // replaces the normal LoadScene function
         }
     }
 
@@ -51,15 +51,20 @@ public class SceneTransition : MonoBehaviour
         }
     }
 
-    public IEnumerator FadeCo()
+    public IEnumerator FadeCo(bool defaultScene, string scene = "")
     {
+        string sceneName = sceneToLoad;
         if (fadeOutPanel != null)
         {
             Instantiate(fadeOutPanel, Vector3.zero, Quaternion.identity);
         }
         yield return new WaitForSeconds(fadeTime); // waits for animation to play before loading
-        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneToLoad);
-        while(!asyncOperation.isDone) // async indicates when the scene is done loading
+        if (defaultScene == false)
+        {
+            sceneName = scene;
+        }
+        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneName);
+        while (!asyncOperation.isDone) // async indicates when the scene is done loading
         {
             yield return null;
         }

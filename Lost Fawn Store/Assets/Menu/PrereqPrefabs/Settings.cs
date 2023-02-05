@@ -145,6 +145,13 @@ public class Settings : MonoBehaviour
     {
         disabled = !disabled;
     }
+    
+    public void SwitchScene(string sceneName)
+    {
+        SceneTransition tn = GameObject.Find("Transition").GetComponent<SceneTransition>();
+        tn.sceneToLoad = sceneName;
+        tn.StartCoroutine(tn.FadeCo(false, sceneName));
+    }
 
 }
 [System.Serializable]
