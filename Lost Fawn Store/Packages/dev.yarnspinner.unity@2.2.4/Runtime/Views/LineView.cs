@@ -342,7 +342,7 @@ namespace Yarn.Unity
         /// <seealso cref="useTypewriterEffect"/>
         [SerializeField]
         [Min(0)]
-        internal float typewriterEffectSpeed = 0f;
+        public float typewriterEffectSpeed = 0f;
 
         /// <summary>
         /// The game object that represents an on-screen button that the user
