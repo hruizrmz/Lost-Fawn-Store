@@ -32,7 +32,10 @@ public class Settings : MonoBehaviour
         //{
         //    LoadSettings(true);
         //}
-        lView = GameObject.Find("LineView").GetComponent<LineView>();
+        if(GameObject.Find("LineView") != null)
+        {
+            lView = GameObject.Find("LineView").GetComponent<LineView>();
+        }
         container = GameObject.Find("SettingsContainer");
     }
     private void Update()
