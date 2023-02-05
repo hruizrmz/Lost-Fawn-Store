@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class SceneTransition : MonoBehaviour
 {
     public string sceneToLoad;
@@ -14,6 +15,8 @@ public class SceneTransition : MonoBehaviour
     public GameObject fadeOutPanel;
     public float fadeTime;
 
+    private bool playerInRange = false;
+
     private void Awake()
     {
         if (fadeInPanel != null) // if fade animation is defined, play and then destroy
@@ -23,12 +26,28 @@ public class SceneTransition : MonoBehaviour
         }
     }
 
-    public void OnTriggerEnter2D(Collider2D other)
+    private void Update()
     {
-        if (other.CompareTag("Player") && !other.isTrigger)
+        if (Input.GetKeyDown(KeyCode.Space) && playerInRange)
         {
             oldPlayerPos.initialValue = playerPos;
             StartCoroutine(FadeCo(true)); // replaces the normal LoadScene function
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInRange = true;
+        }
+    }
+
+    public void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInRange = false;
         }
     }
 

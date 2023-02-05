@@ -17,6 +17,7 @@ Michelle: Who… are you?
 Clerk: I am but a humble clerk. Could you tell me what brought you here?
 Michelle: I guess it was… something mundane, but also close.
 Clerk: Could you describe it to me in more detail, ma’am?
+<<transition Character>>
 Michelle: I don’t think I can remember it well. But I can try. It was something very simple, but it was the sweetest thing I had ever eaten. The taste is unlike any other. I hope it makes sense, does it?
 Clerk: That is indeed quite interesting. But of course, ma'am. Just wait here, please.
 Clerk: <i>The sweetest thing ever, huh? I could try the Nostalgic Flavors Mall.</i>

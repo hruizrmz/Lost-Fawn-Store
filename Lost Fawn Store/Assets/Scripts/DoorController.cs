@@ -6,6 +6,7 @@ public class DoorController : MonoBehaviour
 {
     public Sprite openSprite, closedSprite;
     public GameObject transitionPoint;
+    public bool closeDoor = true;
 
     void Awake()
     {
