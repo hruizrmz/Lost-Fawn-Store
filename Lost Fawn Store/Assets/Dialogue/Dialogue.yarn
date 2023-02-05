@@ -62,7 +62,7 @@ Michelle: Well, the moment your brush - or - your pen, touches the page, any opp
 Michelle: All you can and all you have to do is to commit to your decision and let it play out. And then, if mistakes are made, the only thing you can do is accept them and move on.
 Clerk: You are also ready to move on, are you not?
 Michelle: Yes. I am ready.
-
+<<goodbye Character>>
 
 ===
 
@@ -91,6 +91,7 @@ Clerk: We are nothing but an old antique shop, madam.
 Clerk: Our goods are quite varied, however. You might not expect what kind of things we have in store for you.
 Clerk: But I believe you are here for a reason, and I think we both know that.
 Kirsi: …
+<<transition Character>>
 Kirsi: I was led here by a song. A bird song, to be particular. It was quite a magnificent sound - a very classic melody. It sure reminds me of my time in the troupe.
 Kirsi: The kind of song that would bring anyone to tears.
 Clerk: I am sure I can find something just for you, madam.
@@ -152,6 +153,7 @@ Kirsi: But I am now ready.
 Kirsi: Let me thank you, darling. You have my deepest gratitude.
 Clerk: Is it time, madam?
 Kirsi: Yes, it is.
+<<goodbye Character>>
 
 ===
 
@@ -172,5 +174,71 @@ title: RockAlbum
 <color=\#b07972>“:Children of Detroit: Black Moral, 2000.”</color>
 
 <color=\#b07972>It looks very cared for, almost like absolutely new.</color>
+
+===
+
+title: Erik1
+---
+
+Clerk: Welcome to Lost Fawn Store. It appears to me that you need help with something.
+Erik: Oh, golly! Where am I, fella?!
+Clerk: No need to worry, please, sir. Let me explain the situation to you…
+<<transition Character>>
+Clerk: Could you tell me more about what you are looking for, perhaps?
+Erik: Could not help but notice it was something clearly important. It ain’t belonging to me, but someone I know. 
+Erik: But… It was very special to both of us.
+Erik: I am so sorry to bother you at this hour, but If you could retrieve it for me, gentleman, I would be much obliged.
+Clerk: It is no trouble at all, sir. Please wait for me here.
+Erik: I am sure glad you are assisting me, gentleman.
+
+===
+
+title: ErikIncorrect
+---
+Erik: Gee, gentleman! No, no, that ain’t right. Maybe you could try something else.
+===
+
+
+title: Erik2
+---
+
+Clerk: I assume this belongs to your wife?
+Erik: Uh-huh. The happiest day of my life. She was dazzling, oh yes, she was.
+Erik: Heck, I thought I was marrying Marylin Monroe. Still do.
+Erik: T’was a very modest wedding, too. We brought a couple of bouquets from her granny, you see - she won a couple of flower competitions and all.
+Erik: We even baked the cake together. It was awfully sweet, but we were happy about how it turned out.
+Erik: My old gal was always a free spirit. “I will do it myself” - she always said. So stubborn.
+Clerk: I am sorry if this question is inappropriate… But is your wife still with us?
+Erik: Oh, gee! Dontcha mess with me like that, please, gentleman.
+Erik: Of course she is.
+Erik: But you know, we is getting old, after all. Both of us are approaching our limits. 
+Erik: You know, we, me and my old lovely gal, are faced with a pretty nasty question.
+Erik: “Which one of us goes first?”
+Erik: We have been together for decades, but time seems long when ‘tis so short and so precious.
+Erik: And that is all she and I will ever get. ‘Tis never enough. I, for one, cannot reasonably answer that question. I don’t think she can, either.
+Erik: I love my wife dearly, and we will spend as much time as our life allows us together. But we are both fragile and impermanent things, gentleman, and someone will have to go first.
+Clerk: …
+Clerk: I see, sir. I hope you and your wife will spend your time wisely.
+Erik: Thank you, gentleman. Those things are like granny’s canned jam, but for memories. The sweetness of summer, all captured within one bottle. Something to remember it by in the wintertime.
+Clerk: Seems like you are ready.
+Erik: I am. Thank you for everything.
+Erik: I hope you also find what you are looking for, little man.
+Clerk: I.. will try.
+Clerk: Goodbye.
+<<goodbye Character>>
+<<jump Endgame>>
+===
+
+title: WeddingTule
+---
+<color=\#b07972>A very old-fashioned wedding tule. It was very common, back then, for those wedding items to pass down from generation to generation. Makes one wonder about all the previous owners. Nevertheless, it is obviously very special to someone out there, or maybe even to two of those lucky someone’s.
+</color>
+
+===
+
+title: Endgame
+---
+Thank you for coming to the Lost Fawn Shop, visitor. We are the place that provides comfort, guidance, and care for those who have forgotten themselves in the daily mundane. When you will not be able to find your own roots, you will come to our garden and we will find them with you. Someday and one day, you might find yourself here again, a visitor, and we will be waiting for you.
+<<sceneswap Transition Credits>>
 
 ===
