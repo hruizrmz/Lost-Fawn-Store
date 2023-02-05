@@ -152,10 +152,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8def1af7cf92bf3448c4827b83e07bf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstItemID: -1
+  secondItemID: 0
   characterEntered: 0
-  itemHeld: -1
   firstItemDone: 0
+  itemHeld: -1
   itemsGiven: []
+  characterNames:
+  - Michelle
+  - Kirsi
+  characterSprites:
+  - {fileID: 21300000, guid: 4ae2f686d0d865d468cb2d0e1fc540fe, type: 3}
+  - {fileID: 21300000, guid: 8c2367151af3b7c4793f75a91e597820, type: 3}
+  currentCharacter: 0
 --- !u!4 &31670373
 Transform:
   m_ObjectHideFlags: 0
