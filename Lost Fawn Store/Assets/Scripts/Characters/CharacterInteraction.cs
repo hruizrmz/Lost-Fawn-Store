@@ -67,10 +67,6 @@ public class CharacterInteraction : MonoBehaviour
             }
             ItemController.Instance.itemHeld = 0;
         }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            dialogBox.StartDialogue(characterName + "Incorrect");
-        }
     }
 
     [YarnCommand("transition")]
