@@ -1,14 +1,12 @@
-﻿title: Start
+﻿title: RoomChoice
 ---
-Wow!
-Michelle: I don’t think I can remember it well. But I can try. It was something very simple, but it was the sweetest thing I had ever eaten. The taste is unlike any other. I hope it makes sense, does it?
+-> {getScenes(0)}
+    <<sceneswap Transition {getScenes(0)}>>
+-> {getScenes(1)}
+    <<sceneswap Transition {getScenes(1)}>>
+-> {getScenes(2)}
+    <<sceneswap Transition {getScenes(2)}>>
 
--> Gosh!
--> Incredible!
--> I'm amazed!
-
-Anyway, time to get writing!
-<<jump Tangerine>>
 ===
 title: Michelle1
 ---
