@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 1414153177776673095}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2.69, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -46,7 +46,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0015354455, y: 0.006141424}
+  m_Offset: {x: 0.024624258, y: -0.11823976}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -57,7 +57,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.995889, y: 0.98956966}
+  m_Size: {x: 1.291089, y: 0.788072}
   m_EdgeRadius: 0
 --- !u!114 &1862668745
 MonoBehaviour:
@@ -71,8 +71,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0d99da33e442a6448002d3695644d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: HelenaRoom1
-  playerPos: {x: 0.2, y: 3.5}
+  sceneToLoad: HelenaRoom2
+  playerPos: {x: 0, y: 0}
   oldPlayerPos: {fileID: 11400000, guid: cebd4d325643b3044830ecf976a94c7f, type: 2}
   fadeInPanel: {fileID: 5443125689564223053, guid: 4017179ef73d2c94ab3d8f4df41f0d67, type: 3}
   fadeOutPanel: {fileID: 8815053169770075741, guid: 851658fdc4fdcf8499eaa9b5fdf1785f, type: 3}

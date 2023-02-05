@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/HelenaRoom1.unity
-    guid: 24e3e0bb1a4a8ff469a4012627960c94
+    path: Assets/Scenes/FrontDesk.unity
+    guid: 61355f31cce5260418f8e05ff5fff318
   - enabled: 1
-    path: Assets/Scenes/HelenaRoom2.unity
-    guid: a64f492e5959f3a41b9449e7f0fbf900
+    path: Assets/Scenes/Laerin-Dialogue.unity
+    guid: 6e5da89c1b74cad48ac43e858e1ac57b
   m_configObjects: {}
