@@ -18,12 +18,15 @@ public class ObjectInteraction : MonoBehaviour
 
     private void Start()
     {
-        foreach (string item in ItemController.Instance.itemsGiven)
+        if (ItemController.Instance != null)
         {
-            if (item == objectName)
-            {
-                hasBeenGiven = true;
-                break;
+            foreach(string item in ItemController.Instance.itemsGiven)
+        {
+                if (item == objectName)
+                {
+                    hasBeenGiven = true;
+                    break;
+                }
             }
         }
 
