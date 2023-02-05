@@ -2141,7 +2141,7 @@ Transform:
   - {fileID: 1498619025}
   - {fileID: 343227547}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &771208809
 GameObject:
@@ -3380,6 +3380,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 922667996}
+    - target: {fileID: 7260511964185713454, guid: 913fa9403f85d0145a2fd3877aded11e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7260511964185713454, guid: 913fa9403f85d0145a2fd3877aded11e, type: 3}
       propertyPath: m_SortingLayerID
       value: 1242691993

@@ -283,6 +283,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7260511964185713454, guid: 913fa9403f85d0145a2fd3877aded11e, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 6416715445509965048}
+    - target: {fileID: 7260511964185713454, guid: 913fa9403f85d0145a2fd3877aded11e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7260511964185713454, guid: 913fa9403f85d0145a2fd3877aded11e, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1242691993
+      objectReference: {fileID: 0}
     - target: {fileID: 8147542468606084959, guid: 913fa9403f85d0145a2fd3877aded11e, type: 3}
       propertyPath: m_Name
       value: Dialogue System
@@ -7560,3 +7572,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f1b81af50032f84d914142848fdc94b, type: 3}
+--- !u!20 &6416715445509965048 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 6416715446157450128, guid: 2f1b81af50032f84d914142848fdc94b, type: 3}
+  m_PrefabInstance: {fileID: 6416715445509965047}
+  m_PrefabAsset: {fileID: 0}
