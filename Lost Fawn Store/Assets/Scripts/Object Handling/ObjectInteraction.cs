@@ -9,6 +9,9 @@ public class ObjectInteraction : MonoBehaviour
     public bool playerInRange;
     public int itemValue;
     public DoorController door;
+
+    public string objectName; // The exact name of this specific object. Case-sensitive
+
     private DialogueRunner dialogBox; // Yarn Dialogue Runner that handles all the lines
 
     private void Start()
@@ -23,9 +26,7 @@ public class ObjectInteraction : MonoBehaviour
         {
             if (ItemController.Instance.itemHeld == 0)
             {
-                // dialogBox.StartDialogue("object"+itemValue); object description
-
-                // don't do all of this until dialogue is finished
+                dialogBox.StartDialogue(objectName);
                 ItemController.Instance.itemHeld = itemValue;
                 Destroy(gameObject);
                 door.transitionPoint.SetActive(true);
@@ -33,6 +34,7 @@ public class ObjectInteraction : MonoBehaviour
             }
         }
     }
+    
 
     private void OnTriggerEnter2D(Collider2D other)
     {

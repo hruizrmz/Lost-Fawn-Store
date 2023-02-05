@@ -7461,6 +7461,10 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 1685188399}
+    - target: {fileID: 5286316499109803206, guid: 07ceb7159fbc53a488f6963078253d54, type: 3}
+      propertyPath: objectName
+      value: Tangerine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07ceb7159fbc53a488f6963078253d54, type: 3}
 --- !u!1001 &6416715445509965047

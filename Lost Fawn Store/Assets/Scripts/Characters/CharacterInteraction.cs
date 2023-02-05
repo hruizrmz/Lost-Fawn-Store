@@ -57,14 +57,11 @@ public class CharacterInteraction : MonoBehaviour
                 dialogBox.StartDialogue(characterName + "3");
                 ItemController.Instance.characterEntered = false; // leaves variable ready for next character to spawn
             }
-            else if (ItemController.Instance.itemHeld == 0) // If 0, should not show dialogue since player is not holding anything
+            else if (ItemController.Instance.itemHeld > 0) // Anything else is the wrong item and should indicate it
             {
                 dialogBox.StartDialogue(characterName + "Incorrect");
             }
-            else // Anything else is the wrong item and should indicate it
-            {
-                dialogBox.StartDialogue(characterName + "Incorrect");
-            }
+            // If 0, it will not show any dialogue since the player is not holding anything
             ItemController.Instance.itemHeld = 0;
         }
     }
