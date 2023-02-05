@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Laerin-Dialogue.unity
     guid: 6e5da89c1b74cad48ac43e858e1ac57b
+  - enabled: 1
+    path: Assets/Scenes/FoodRoom.unity
+    guid: f60257e444b72a34c93bafe3c8cebe91
   m_configObjects: {}
