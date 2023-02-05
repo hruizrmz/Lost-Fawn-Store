@@ -84,7 +84,7 @@ title: Storybook
 title: Kirsi1
 ---
 
-Clerk: Welcome to Lost Fawn Store. MayI help you with something?
+Clerk: Welcome to Lost Fawn Store. May I help you with something?
 Kirsi: Excuse me, but I am not sure where I am. 
 Kirsi: Could you tell me more about this place?
 Clerk: We are nothing but an old antique shop, madam. 
@@ -171,7 +171,7 @@ title: RockAlbum
 ---
 <color=\#b07972>A cover with a vinyl album inside. The cover has an illustration of a bloodied moon on it, with the name and year of release printed in grotesque, heavy gothic font.</color>
 
-<color=\#b07972>“:Children of Detroit: Black Moral, 2000.”</color>
+:<color=\#b07972>“Children of Detroit: Black Moral, 2000.”</color>
 
 <color=\#b07972>It looks very cared for, almost like absolutely new.</color>
 
@@ -231,8 +231,7 @@ Clerk: Goodbye.
 
 title: WeddingTule
 ---
-<color=\#b07972>A very old-fashioned wedding tule. It was very common, back then, for those wedding items to pass down from generation to generation. Makes one wonder about all the previous owners. Nevertheless, it is obviously very special to someone out there, or maybe even to two of those lucky someone’s.
-</color>
+<color=\#b07972>A very old-fashioned wedding tule. It was very common, back then, for those wedding items to pass down from generation to generation. Makes one wonder about all the previous owners. Nevertheless, it is obviously very special to someone out there, or maybe even to two of those lucky someone’s.</color>
 
 ===
 
