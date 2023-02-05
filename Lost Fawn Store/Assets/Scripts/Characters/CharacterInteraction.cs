@@ -31,7 +31,7 @@ public class CharacterInteraction : MonoBehaviour
             this.transform.position = charPos1;
             dialogBox.StartDialogue(characterName + "1"); // door dialogue
             // fade only after 1st part of dialogue is done
-            StartCoroutine(FadeCo());
+            //StartCoroutine(FadeCo());
             // dialogBox.StartDialogue(characterName + "1"); // desk dialogue
             ItemController.Instance.firstItemDone = false;
             ItemController.Instance.itemHeld = 0;
@@ -67,11 +67,20 @@ public class CharacterInteraction : MonoBehaviour
             }
             ItemController.Instance.itemHeld = 0;
         }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            dialogBox.StartDialogue(characterName + "Incorrect");
+        }
     }
 
+    [YarnCommand("transition")]
+    public void YarnTransition()
+    {
+        StartCoroutine(FadeCo());
+    }
     public IEnumerator FadeCo()
     {
-        yield return new WaitForSeconds(3f); // waits for animation to play before loading
+        /*yield return new WaitForSeconds(3f);*/ // waits for animation to play before loading
         if (fadingPanel != null)
         {
             fadingPanel.GetComponent<Canvas>().worldCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>() as Camera;
