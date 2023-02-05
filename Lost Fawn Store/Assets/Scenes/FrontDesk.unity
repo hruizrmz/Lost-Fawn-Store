@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8def1af7cf92bf3448c4827b83e07bf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterEntered: 0
   itemHeld: -1
   firstItemDone: 0
 --- !u!4 &31670373
@@ -2122,11 +2123,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6675543484017083228, guid: 6b05547ee23f7f848aefd8f1189bdb98, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.8
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 6675543484017083228, guid: 6b05547ee23f7f848aefd8f1189bdb98, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5
+      value: 1.3
       objectReference: {fileID: 0}
     - target: {fileID: 6675543484017083228, guid: 6b05547ee23f7f848aefd8f1189bdb98, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2352,6 +2353,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 796164436}
+    - target: {fileID: 7260511964185713454, guid: 913fa9403f85d0145a2fd3877aded11e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7260511964185713454, guid: 913fa9403f85d0145a2fd3877aded11e, type: 3}
       propertyPath: m_SortingLayerID
       value: 1242691993
@@ -5304,17 +5309,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 297260142390328820, guid: dfcdd05a35712684786e226993611dd2, type: 3}
+      propertyPath: fadeTime
+      value: 0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 297260142390328820, guid: dfcdd05a35712684786e226993611dd2, type: 3}
+      propertyPath: fadingPanel
+      value: 
+      objectReference: {fileID: 5443125689564223053, guid: dc1b18f8e0150da4aae905cbec74d593, type: 3}
     - target: {fileID: 297260142390328821, guid: dfcdd05a35712684786e226993611dd2, type: 3}
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 297260142390328821, guid: dfcdd05a35712684786e226993611dd2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.01
+      value: -5.58
       objectReference: {fileID: 0}
     - target: {fileID: 297260142390328821, guid: dfcdd05a35712684786e226993611dd2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.4
+      value: 0.63
       objectReference: {fileID: 0}
     - target: {fileID: 297260142390328821, guid: dfcdd05a35712684786e226993611dd2, type: 3}
       propertyPath: m_LocalPosition.z

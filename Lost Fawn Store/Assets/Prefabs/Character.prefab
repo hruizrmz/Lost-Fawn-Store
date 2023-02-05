@@ -102,6 +102,9 @@ MonoBehaviour:
   secondItemID: 2
   characterName: Michelle
   playerInRange: 0
+  fadeInPanel: {fileID: 5443125689564223053, guid: 4017179ef73d2c94ab3d8f4df41f0d67, type: 3}
+  fadeOutPanel: {fileID: 8815053169770075741, guid: 851658fdc4fdcf8499eaa9b5fdf1785f, type: 3}
+  fadeTime: 0.3
 --- !u!61 &297260142390328819
 BoxCollider2D:
   m_ObjectHideFlags: 0

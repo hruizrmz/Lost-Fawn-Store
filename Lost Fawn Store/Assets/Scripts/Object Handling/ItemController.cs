@@ -6,7 +6,8 @@ public class ItemController : MonoBehaviour
 {
     public static ItemController Instance { get; set; }
 
-    public int itemHeld = -1;
+    public bool characterEntered = false;
+    public int itemHeld = 0;
     public bool firstItemDone = false;
 
     void Awake()
