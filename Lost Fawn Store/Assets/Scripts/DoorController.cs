@@ -10,10 +10,18 @@ public class DoorController : MonoBehaviour
 
     void Awake()
     {
-        if (ItemController.Instance.itemHeld > 0)
+        if (ItemController.Instance != null)
         {
-            transitionPoint.SetActive(true);
-            this.GetComponent<SpriteRenderer>().sprite = openSprite;
+            if (ItemController.Instance.itemHeld > 0)
+            {
+                transitionPoint.SetActive(true);
+                this.GetComponent<SpriteRenderer>().sprite = openSprite;
+            }
+            else
+            {
+                transitionPoint.SetActive(false);
+                this.GetComponent<SpriteRenderer>().sprite = closedSprite;
+            }
         }
         else
         {
