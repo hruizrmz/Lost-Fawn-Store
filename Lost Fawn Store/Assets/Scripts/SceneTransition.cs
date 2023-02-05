@@ -53,7 +53,7 @@ public class SceneTransition : MonoBehaviour
         switch (sceneName)
         {
             case "FrontDesk":
-                playerPos = new Vector2(-0.8f, 2.5f);
+                playerPos = new Vector2(0.8f, 2.5f);
                 break;
             case "FoodRoom":
                 playerPos = new Vector2(-7.0f, 2.8f);
