@@ -88,7 +88,6 @@ public class CharacterInteraction : MonoBehaviour
             else if ((ItemController.Instance.itemHeld == secondItemID) && (ItemController.Instance.firstItemDone)) // avoids getting 2nd response too early
             {
                 dialogBox.StartDialogue(characterName + "3");
-                YarnGoodbye();
             }
             else if (ItemController.Instance.itemHeld > 0) // Anything else is the wrong item and should indicate it
             {
