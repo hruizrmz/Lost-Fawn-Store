@@ -194,8 +194,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1536176806229284633}
     m_Modifications:
     - target: {fileID: 1862668745, guid: 8892d24bd7d65824bb6017b16a8f431e, type: 3}
+      propertyPath: playerPos.x
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1862668745, guid: 8892d24bd7d65824bb6017b16a8f431e, type: 3}
+      propertyPath: playerPos.y
+      value: 2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1862668745, guid: 8892d24bd7d65824bb6017b16a8f431e, type: 3}
       propertyPath: sceneToLoad
-      value: Laerin-Dialogue
+      value: FoodRoom
       objectReference: {fileID: 0}
     - target: {fileID: 1414153177776673088, guid: 8892d24bd7d65824bb6017b16a8f431e, type: 3}
       propertyPath: m_RootOrder
@@ -207,7 +215,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1414153177776673088, guid: 8892d24bd7d65824bb6017b16a8f431e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.02
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1414153177776673088, guid: 8892d24bd7d65824bb6017b16a8f431e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -240,6 +248,22 @@ PrefabInstance:
     - target: {fileID: 1414153177776673088, guid: 8892d24bd7d65824bb6017b16a8f431e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1414153177776673089, guid: 8892d24bd7d65824bb6017b16a8f431e, type: 3}
+      propertyPath: m_Size.x
+      value: 1.0179521
+      objectReference: {fileID: 0}
+    - target: {fileID: 1414153177776673089, guid: 8892d24bd7d65824bb6017b16a8f431e, type: 3}
+      propertyPath: m_Size.y
+      value: 1.3647312
+      objectReference: {fileID: 0}
+    - target: {fileID: 1414153177776673089, guid: 8892d24bd7d65824bb6017b16a8f431e, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0091487765
+      objectReference: {fileID: 0}
+    - target: {fileID: 1414153177776673089, guid: 8892d24bd7d65824bb6017b16a8f431e, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.4065693
       objectReference: {fileID: 0}
     - target: {fileID: 1414153177776673095, guid: 8892d24bd7d65824bb6017b16a8f431e, type: 3}
       propertyPath: m_Name

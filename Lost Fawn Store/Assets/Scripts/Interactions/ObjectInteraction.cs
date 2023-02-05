@@ -5,33 +5,25 @@ using UnityEngine.UI;
 
 public class ObjectInteraction : MonoBehaviour
 {
-    public GameObject dialogBox;
-    public Text dialogText;
-    public string dialog;
     public bool playerInRange;
     public int itemValue;
+    public DoorController door;
 
-    private PlayerInventory inventory;
+    private ItemController itemController;
 
     // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space) && playerInRange)
         {
-            if(dialogBox.activeInHierarchy)
+            itemController = ItemController.Instance;
+            if (itemController.itemHeld == 0)
             {
-                dialogBox.SetActive(false);
-                Time.timeScale = 1f;
-
-                if (inventory.item == 0) {
-                inventory.item = itemValue;
-                print("Player inventory picked up item #" + inventory.Item);
+                itemController.itemHeld = itemValue;
+                print("Player inventory picked up item #" + itemController.itemHeld);
                 Destroy(gameObject);
-            }
-            } else {
-                dialogBox.SetActive(true);
-                dialogText.text = dialog;
-                Time.timeScale = 0f;
+                door.transitionPoint.SetActive(true);
+                door.GetComponent<SpriteRenderer>().sprite = door.openSprite;
             }
         }
     }
@@ -41,7 +33,6 @@ public class ObjectInteraction : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             playerInRange = true;
-            inventory = other.GetComponent<PlayerInventory>();
         }
     }
 
@@ -50,7 +41,6 @@ public class ObjectInteraction : MonoBehaviour
         if(other.CompareTag("Player"))
         {
            playerInRange = false;
-           dialogBox.SetActive(false);
         }
     }
 }
