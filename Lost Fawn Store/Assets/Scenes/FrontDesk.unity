@@ -155,6 +155,7 @@ MonoBehaviour:
   characterEntered: 0
   itemHeld: -1
   firstItemDone: 0
+  itemsGiven: []
 --- !u!4 &31670373
 Transform:
   m_ObjectHideFlags: 0
@@ -5374,6 +5375,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1536176806229284647, guid: ea5b161cc233e81439c4428e92be45b7, type: 3}
+      propertyPath: closeDoor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1536176806821613841, guid: ea5b161cc233e81439c4428e92be45b7, type: 3}
       propertyPath: m_Name
       value: DoorFrame

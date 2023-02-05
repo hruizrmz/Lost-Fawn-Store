@@ -9,6 +9,7 @@ public class ItemController : MonoBehaviour
     public bool characterEntered = false;
     public int itemHeld = 0;
     public bool firstItemDone = false;
+    public List<string> itemsGiven = new List<string>(); // tracks which objects have been given already to not spawn them
 
     void Awake()
     {

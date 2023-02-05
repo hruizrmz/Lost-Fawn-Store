@@ -11,12 +11,31 @@ public class ObjectInteraction : MonoBehaviour
     public DoorController door;
 
     public string objectName; // The exact name of this specific object. Case-sensitive
+    private bool hasBeenGiven = false;
 
     private DialogueRunner dialogBox; // Yarn Dialogue Runner that handles all the lines
 
     private void Start()
     {
-        dialogBox = GameObject.Find("Dialogue System").GetComponent<DialogueRunner>();
+        foreach (string item in ItemController.Instance.itemsGiven)
+        {
+            if (item == objectName)
+            {
+                hasBeenGiven = true;
+                break;
+            }
+        }
+
+        if (hasBeenGiven)
+        {
+            door.transitionPoint.SetActive(true);
+            door.GetComponent<SpriteRenderer>().sprite = door.openSprite;
+            this.gameObject.SetActive(false);
+        }
+        else
+        {
+            dialogBox = GameObject.Find("Dialogue System").GetComponent<DialogueRunner>();
+        }
     }
 
     // Update is called once per frame
@@ -28,6 +47,7 @@ public class ObjectInteraction : MonoBehaviour
             {
                 dialogBox.StartDialogue(objectName);
                 ItemController.Instance.itemHeld = itemValue;
+                ItemController.Instance.itemsGiven.Add(objectName);
                 Destroy(gameObject);
                 door.transitionPoint.SetActive(true);
                 door.GetComponent<SpriteRenderer>().sprite = door.openSprite;

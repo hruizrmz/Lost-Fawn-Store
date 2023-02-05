@@ -8,8 +8,6 @@ using Yarn.Unity;
 public class CharacterInteraction : MonoBehaviour
 {
     private DialogueRunner dialogBox; // Yarn Dialogue Runner that handles all the lines
-    // public Text dialogText;
-    // public string dialogEmpty, dialogWrong, dialogRight;
     public int firstItemID;
     public int secondItemID;
 
