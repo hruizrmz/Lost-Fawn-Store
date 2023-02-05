@@ -54,7 +54,8 @@ public class ObjectInteraction : MonoBehaviour
                 Destroy(gameObject);
                 door.transitionPoint.SetActive(true);
                 door.GetComponent<SpriteRenderer>().sprite = door.openSprite;
-            }
+                
+            } 
         }
     }
     

@@ -7469,6 +7469,26 @@ PrefabInstance:
       propertyPath: objectName
       value: Tangerine
       objectReference: {fileID: 0}
+    - target: {fileID: 5286316499109803206, guid: 07ceb7159fbc53a488f6963078253d54, type: 3}
+      propertyPath: InteractionSound
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286316499109803206, guid: 07ceb7159fbc53a488f6963078253d54, type: 3}
+      propertyPath: interactionSound
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286316499109803207, guid: 07ceb7159fbc53a488f6963078253d54, type: 3}
+      propertyPath: m_Radius
+      value: 0.55945694
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286316499109803207, guid: 07ceb7159fbc53a488f6963078253d54, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.06054306
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286316499109803207, guid: 07ceb7159fbc53a488f6963078253d54, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07ceb7159fbc53a488f6963078253d54, type: 3}
 --- !u!1001 &6416715445509965047
