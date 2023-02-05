@@ -6,12 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MenuScene.unity
+    guid: e828dec87789374498aba12a5335e024
+  - enabled: 1
     path: Assets/Scenes/FrontDesk.unity
     guid: 61355f31cce5260418f8e05ff5fff318
   - enabled: 1
-    path: Assets/Scenes/Laerin-Dialogue.unity
-    guid: 6e5da89c1b74cad48ac43e858e1ac57b
-  - enabled: 1
     path: Assets/Scenes/FoodRoom.unity
     guid: f60257e444b72a34c93bafe3c8cebe91
+  - enabled: 1
+    path: Assets/Scenes/LostMedia.unity
+    guid: 9234ac03625a39e40bd90f2c91b867d4
+  - enabled: 1
+    path: Assets/Scenes/Ballroom.unity
+    guid: 44da6a1c6a5eb124793db96f2f7e6e1f
   m_configObjects: {}
