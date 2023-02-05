@@ -79,3 +79,97 @@ title: Storybook
 <color=\#b07972>This copy is quite battered but was obviously treasured by someone - until it was lost.</color>
 
 ===
+
+title: Kirsi1
+---
+
+Clerk: Welcome to Lost Fawn Store. MayI help you with something?
+Kirsi: Excuse me, but I am not sure where I am. 
+Kirsi: Could you tell me more about this place?
+Clerk: We are nothing but an old antique shop, madam. 
+Clerk: Our goods are quite varied, however. You might not expect what kind of things we have in store for you.
+Clerk: But I believe you are here for a reason, and I think we both know that.
+Kirsi: …
+Kirsi: I was led here by a song. A bird song, to be particular. It was quite a magnificent sound - a very classic melody. It sure reminds me of my time in the troupe.
+Kirsi: The kind of song that would bring anyone to tears.
+Clerk: I am sure I can find something just for you, madam.
+Kirsi: You are being such a darling. Surprise me, please.
+Clerk: I will be with you in a moment.
+Clerk: <i>This one might be a little tricky.</i>
+
+===
+
+title: KirsiIncorrect
+---
+Kirsi: I am sorry, darling, but I do not think this is something I am looking for.
+===
+
+title: Kirsi2
+---
+
+Kirsi: Ah… What a lovely memento. 2008, 6th of November, 18:00, Swan Lake, Odette. To our beloved Kirsi.
+Kirsi: That was the best performance I have ever given. The apex of my career and my artistry.
+Kirsi: There is nothing like a ballet done right - one performance is something you will prepare for weeks and months, without stopping.
+Kirsi: But ballet is more about the people around you, really. The audience, other dancers, directors, and musicians.
+Kirsi: I was very young, and very naive too, if I may say so. I said a lot of things I should not have and did not say things I should have.
+Kirsi: But we - me and my troupe - we had a good run. Ah, the things we have done together. Perhaps a lot of it was not that good. But we did well too, and that is most important to me.
+Clerk: What happened after that?
+Kirsi: Well, dear, people age, and our bodies, unfortunately, are quite fragile. Ballet requires a lot of patience, a lot of tolerance, and a very strong and agile body.
+Kirsi: They do say that dancers die twice.
+Kirsi: There is nothing to do about that - at some point or other, you will just approach your limit, and that is all you will take from there.
+Kirsi: People and memories stay, however. Having a strong community and living a full life. Well, that seems to be heaven, is it not?
+Kirsi: At least, on account of lacking any evidence for actual heaven, that seems to be the closest to it.
+Kirsi: But maybe it is worth giving it another shot, for the sake.
+Clerk: Maybe so. I am sure you are not as fragile as you say, madam.
+Kirsi: Ah, but please, dear. No need for flattery.
+Kirsi: However, we are not finished just yet.
+Clerk: Indeed, madam. Ask away, please.
+Kirsi: This may be a bold ask. But I am looking for another song, as well. Maybe a few songs, all at once.
+Kirsi: It is something I lost, long ago. But I was always looking for it, missing it. It would mean a lot if you could fetch it for me, dear.
+Clerk: Of course.
+
+===
+
+title: Kirsi3
+---
+
+Clerk: Interesting. It has been with us for a while.
+Clerk: If I may, I would never think this one belongs to you.
+Kirsi: Must be quite unexpected for you, dear. Well, I have been told so a few times, that is for sure.
+Kirsi: This was one of my favorite albums in my youth. And it still is.
+Kirsi: Funny, is it not? Some things change a lot, while others do not change at all.
+Clerk: I am quite familiar with that feeling.
+Kirsi: I am sure you are. 
+Kirsi: But you are not the first one to think that classical music is my only suit.
+Kirsi: Classical music is the music of elegance and drama, but for me, it is rock music that is more… lively.
+Kirsi: This is an album I bought at a concert, actually. Albeit a really small one - a concert that is barely a concert and more of a bar gig.
+Kirsi: As you might have guessed, Children of Detroit is a really underground group of musicians, dear. They never made it big and dissipated a few years later.
+Kirsi: But from time to time, I do wonder how those complete strangers are doing.
+Clerk: You may not know them personally, madam, but their art does provide a sense of connection, is it not?
+Kirsi: It does. Maybe partially it is nostalgia, but I do not think so, dear.
+Kirsi: But I am now ready.
+Kirsi: Let me thank you, darling. You have my deepest gratitude.
+Clerk: Is it time, madam?
+Kirsi: Yes, it is.
+
+===
+
+title: PorcelainSwan
+---
+<color=\#b07972>A small, but delicate swan statuette made of exquisite porcelain. There is a note attached to its neck.</color>
+
+<color=\#b07972>“To o…r b....ved ...si”</color>
+
+<color=\#b07972>Time has done its bidding on the inks and some words have simply faded.</color>
+
+===
+
+title: RockAlbum
+---
+<color=\#b07972>A cover with a vinyl album inside. The cover has an illustration of a bloodied moon on it, with the name and year of release printed in grotesque, heavy gothic font.</color>
+
+<color=\#b07972>“:Children of Detroit: Black Moral, 2000.”</color>
+
+<color=\#b07972>It looks very cared for, almost like absolutely new.</color>
+
+===

@@ -150,7 +150,7 @@ public class Settings : MonoBehaviour
     {
         SceneTransition tn = GameObject.Find("Transition").GetComponent<SceneTransition>();
         tn.sceneToLoad = sceneName;
-        tn.StartCoroutine(tn.FadeCo());
+        tn.StartCoroutine(tn.FadeCo(false, sceneName));
     }
 
 }
