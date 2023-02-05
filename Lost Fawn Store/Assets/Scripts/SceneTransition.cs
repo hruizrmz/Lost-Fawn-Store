@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Yarn.Unity;
 
 
 public class SceneTransition : MonoBehaviour
@@ -13,12 +14,23 @@ public class SceneTransition : MonoBehaviour
 
     public GameObject fadeInPanel;
     public GameObject fadeOutPanel;
+    private DialogueRunner dRun;
     public float fadeTime;
 
+    public List<string> scenes;
     private bool playerInRange = false;
 
     private void Awake()
     {
+        if(GameObject.Find("Dialogue System") != null)
+        {
+            dRun = GameObject.Find("Dialogue System").GetComponent<DialogueRunner>();
+        }
+
+        scenes = new List<string>() { "FrontDesk", "Ballroom", "FoodRoom", "LostMedia" };
+        string currentScene = SceneManager.GetActiveScene().name;
+        scenes.Remove(currentScene);
+
         if (fadeInPanel != null) // if fade animation is defined, play and then destroy
         {
             GameObject panel = Instantiate(fadeInPanel, Vector3.zero, Quaternion.identity) as GameObject;
@@ -31,10 +43,25 @@ public class SceneTransition : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && playerInRange)
         {
             oldPlayerPos.initialValue = playerPos;
-            StartCoroutine(FadeCo(true)); // replaces the normal LoadScene function
+            /*StartCoroutine(FadeCo(true));*/ // replaces the normal LoadScene function
+            dRun.StartDialogue("RoomChoice");
         }
     }
 
+    [YarnCommand("sceneswap")]
+    public void SceneChoice(string sceneName)
+    {
+        StartCoroutine(FadeCo(false, sceneName));
+    }
+
+    [YarnFunction("getScenes")]
+    public static string GetAllScenes(int sceneNum)
+    {
+        SceneTransition st = GameObject.Find("Transition").GetComponent<SceneTransition>();
+        List<string> sceneList = st.scenes;
+        return sceneList[sceneNum];
+    }
+    
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
