@@ -5,12 +5,15 @@ using System;
 
 public class AudioManager : MonoBehaviour
 {
+
     public Sound[] musicSounds, sfxSounds;
     public AudioSource musicSource, sfxSource;
 
     private void Start() {
         PlayMusic("Nostalgic");
     }
+
+
 
     public void PlayMusic(string name) {
         Sound s = Array.Find(musicSounds, x => x.name == name);
