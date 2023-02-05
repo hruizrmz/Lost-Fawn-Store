@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using Yarn.Unity;
 
-
 public class CharacterInteraction : MonoBehaviour
 {
     private DialogueRunner dialogBox; // Yarn Dialogue Runner that handles all the lines
@@ -21,23 +20,35 @@ public class CharacterInteraction : MonoBehaviour
     public GameObject fadingPanel;
     public float fadeTime;
 
+    private void OnEnable()
+    {
+        if (!ItemController.Instance.characterEntered)
+        {
+            characterName = ItemController.Instance.characterNames[ItemController.Instance.currentCharacter];
+            characterSprite = ItemController.Instance.characterSprites[ItemController.Instance.currentCharacter];
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = characterSprite;
+            this.transform.position = charPos1;
+
+            if (dialogBox != null)
+            {
+                dialogBox.StartDialogue(characterName + "1");
+                ItemController.Instance.characterEntered = true;
+            }
+        }
+    }
+
     private void Start()
     {
         dialogBox = GameObject.Find("Dialogue System").GetComponent<DialogueRunner>();
         characterName = ItemController.Instance.characterNames[ItemController.Instance.currentCharacter];
         characterSprite = ItemController.Instance.characterSprites[ItemController.Instance.currentCharacter];
         this.gameObject.GetComponent<SpriteRenderer>().sprite = characterSprite;
+
         if (!ItemController.Instance.characterEntered)
         {
-            this.transform.position = charPos1;
-            ItemController.Instance.firstItemID += 2;
-            ItemController.Instance.secondItemID += 2;
             dialogBox.StartDialogue(characterName + "1");
-            ItemController.Instance.firstItemDone = false;
-            ItemController.Instance.itemHeld = 0;
             ItemController.Instance.characterEntered = true;
-        }
-        else
+        } else
         {
             this.transform.position = charPos2;
         }
@@ -46,37 +57,9 @@ public class CharacterInteraction : MonoBehaviour
         secondItemID = ItemController.Instance.secondItemID;
     }
 
-    private void OnEnable()
-    {
-        if (ItemController.Instance != null)
-        {
-            characterName = ItemController.Instance.characterNames[ItemController.Instance.currentCharacter];
-            characterSprite = ItemController.Instance.characterSprites[ItemController.Instance.currentCharacter];
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = characterSprite;
-            if (!ItemController.Instance.characterEntered)
-            {
-                this.transform.position = charPos1;
-                ItemController.Instance.firstItemID += 2;
-                ItemController.Instance.secondItemID += 2;
-                dialogBox.StartDialogue(characterName + "1");
-                ItemController.Instance.firstItemDone = false;
-                ItemController.Instance.itemHeld = 0;
-                ItemController.Instance.characterEntered = true;
-            }
-            else
-            {
-                this.transform.position = charPos2;
-            }
-        }
-    }
-
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.E))
-        {
-            YarnGoodbye();
-        }
         // Checks whether player has no items, either of the two correct items, or an incorrect item
         if(Input.GetKeyDown(KeyCode.Space) && playerInRange && dialogBox.IsDialogueRunning == false)
         {

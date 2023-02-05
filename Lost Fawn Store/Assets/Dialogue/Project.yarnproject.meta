@@ -18,6 +18,10 @@ ScriptedImporter:
   searchAllAssembliesForActions: 1
   assembliesToSearch: []
   ListOfFunctions:
+  - Name: GetAllScenes
+    ReturnType: -> String
+    Parameters:
+    - sceneNum
   - Name: Random
     ReturnType: -> Single
     Parameters: []
@@ -66,3 +70,11 @@ ScriptedImporter:
   - Name: CoolFunction
     ReturnType: -> Int32
     Parameters: []
+  - Name: TestFunctionVariable
+    ReturnType: -> Int32
+    Parameters:
+    - num
+  - Name: TestFunctionVariable
+    ReturnType: -> String
+    Parameters:
+    - text
